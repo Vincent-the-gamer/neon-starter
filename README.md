@@ -5,7 +5,7 @@ Neon starter template for building Node library in Rust.
 ## Usage
 
 > [!NOTE]
-> Replace neon-starter, _description_ and Vincent-the-gamer globally to use this template.
+> Replace neon-starter, \_description\_ and Vincent-the-gamer globally to use this template.
 
 Both `Node.js` and `Rust` environments required to use this template, please install them first.
 
