@@ -11,6 +11,14 @@ Both `Node.js` and `Rust` environments required to use this template, please ins
 
 then `clone this repo to local` or `use it as a template`.
 
+Clone to local without `.git` folder:
+```shell
+npx degit https://github.com/Vincent-the-gamer/neon-starter.git your-project-name
+
+# pnpm
+pnpx degit https://github.com/Vincent-the-gamer/neon-starter.git your-project-name
+```
+
 
 ## Test
 
