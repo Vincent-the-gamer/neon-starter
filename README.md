@@ -1,6 +1,6 @@
 # neon-starter
 
-Neon starter template for building Node library in Rust.
+Neon starter template for building **Node.js library** in `Rust`.
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
