@@ -1,5 +1,5 @@
 // @ts-expect-error .node file
-import { echo } from "../index.node"
+import { echo } from "../lib"
 import expect from "./expect"
 
 let echoed = echo("你好呀")  // Echoed text: 你好呀

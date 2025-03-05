@@ -2,17 +2,19 @@
   "name": "neon-starter",
   "version": "0.1.0",
   "description": "_description_",
-  "main": "index.node",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "cargo test",
-    "cargo-build": "cargo build --message-format=json-render-diagnostics > cargo.log",
-    "cross-build": "cross build --message-format=json-render-diagnostics > cross.log",
-    "postcargo-build": "neon dist < cargo.log",
-    "postcross-build": "neon dist -m /target < cross.log",
+    "test": "cd native && cargo test",
+    "cargo-build": "cd native && cargo build --message-format=json-render-diagnostics > cargo.log",
+    "cross-build": "cd native && cross build --message-format=json-render-diagnostics > cross.log",
+    "postcargo-build": "cd native && neon dist < cargo.log",
+    "postcross-build": "cd native && neon dist -m /target < cross.log",
     "debug": "pnpm run cargo-build",
     "build": "pnpm run cargo-build --release",
     "cross": "pnpm run cross-build --release",
-    "tsx": "tsx"
+    "tsx": "tsx",
+    "clean": "cd native && cargo clean",
+    "npm:login": "pnpm login --registry https://registry.npmjs.org/"
   },
   "author": "Vincent-the-gamer",
   "homepage": "https://github.com/Vincent-the-gamer/neon-starter#readme",
@@ -32,5 +34,10 @@
   "devDependencies": {
     "@neon-rs/cli": "0.1.73",
     "tsx": "^4.19.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
