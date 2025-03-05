@@ -29,8 +29,7 @@ pnpx degit https://github.com/Vincent-the-gamer/neon-starter.git your-project-na
 ```shell
 pnpm i
 cd native && cargo check
-
-pnpm run debug
+cd .. && pnpm run debug
 ```
 
 ## Test
